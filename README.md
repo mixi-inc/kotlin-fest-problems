@@ -85,6 +85,6 @@ https://codeforces.com/contest/1171/problem/B
 ただしメモリは128MBしか使えないものとします（実際は-Xmx128mを指定してください）。
 
 ```
-入力: Fileオブジェクト
+入力: Sequence<Int>
 出力: 個数
 ```
