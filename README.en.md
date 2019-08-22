@@ -2,10 +2,10 @@
 
 Let's solve 4 problems below using main.kt
 
-on estimation.
-同点の場合、ランキング表示では全体の処理時間が短い人ほど上位になります。
-評価時に全回答の処理時間の合計が4分を越えた場合は失格とします。
-テストケースは企画終了後に公開とします。
+- We will benchmark the processing time of your code.
+- If the number of correct answers is the same, faster code will be ranked higher.
+- Code will be eliminated if it takes more than 4 mins.
+- The actual test cases will be published only at a later date.
 
 # Answer form
 
@@ -36,8 +36,8 @@ Alice wants only 3 types of ornaments to be used on the Christmas Tree: yellow, 
 
 In Bob's opinion, a Christmas Tree will be beautiful if:
 
-the number of blue ornaments used is greater by exactly 1 than the number of yellow ornaments, and
-the number of red ornaments used is greater by exactly 1 than the number of blue ornaments.
+the number of blue ornaments used is greater by exactly 1 than the number of yellow ornaments, and  
+the number of red ornaments used is greater by exactly 1 than the number of blue ornaments.  
 That is, if they have 8 yellow ornaments, 13 blue ornaments and 9 red ornaments, we can choose 4 yellow, 5 blue and 6 red ornaments (5=4+1 and 6=5+1).
 
 Alice wants to choose as many ornaments as possible, but she also wants the Christmas Tree to be beautiful according to Bob's opinion.
@@ -69,7 +69,8 @@ https://codeforces.com/contest/1171/problem/B
 
 ## Q3
 
-Given an positive even integer `n`. Calculate sum of even positive integers not greater than `n`.
+Given a positive integer `n` ( 1 <= n <= 1,000,000,000),
+calculate the sum of positive even integers not greater than `n`.
 
 ```
 Input: 10
@@ -80,9 +81,11 @@ Explanation: 2+4+6+8+10
 
 ## Q4
 
-Given a list of 20,000,000 numbers, and each between 0 and 100,000,000. 
+Given a list of 200,000,000 numbers, each of which is between 0 and 100,000,000. 
 Please count (in a reasonable time) numbers that are not on the list.
+The memory is limited to only 128MB (use VM option `-Xmx128m` ).
+
 ```
 Input: Sequence<Int>
-Output: count of missin numbers
+Output: number of missing numbers
 ```
