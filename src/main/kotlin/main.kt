@@ -1,44 +1,3 @@
-import java.io.File
-
-fun testListNode(expect: ListNode, block: () -> ListNode) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
-}
-
-fun testInt(expect: Int, block: () -> Int) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
-}
-
-fun testList(expect: List<Int>, block: () -> List<Int>) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
-}
-
 // These are dummy test cases.
 // We will use more test cases to estimate your code.
 fun main() {
@@ -62,8 +21,9 @@ fun main() {
     }
 
     println("Q4")
-    testList(listOf(0)) {
-        return@testList answer4(File("src/main/resources/numbers.txt"))
+    val testSequence = generateSequence(200_000_000, randomSet())
+    testInt(0) {
+        return@testInt answer4(testSequence)
     }
 }
 
@@ -90,6 +50,6 @@ fun answer3(inputs: Int): Int {
     return 0
 }
 
-fun answer4(input: File): List<Int> {
-    return listOf(0)
+fun answer4(input: Sequence<Int>): Int {
+    return 0
 }
