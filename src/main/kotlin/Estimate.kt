@@ -1,5 +1,33 @@
 import kotlin.random.Random
 
+// helpers for estimation
+fun testListNode(expect: ListNode, block: () -> ListNode) {
+    val start = System.currentTimeMillis()
+    val output = block()
+    val end = System.currentTimeMillis()
+    val time = (end - start).toString()
+    val result = if (expect == output) {
+        "good"
+    } else {
+        "bad"
+    }
+    println("time: $time ms\tresult: $result")
+}
+
+fun testInt(expect: Int, block: () -> Int) {
+    val start = System.currentTimeMillis()
+    val output = block()
+    val end = System.currentTimeMillis()
+    val time = (end - start).toString()
+    val result = if (expect == output) {
+        "good"
+    } else {
+        "bad"
+    }
+    println("time: $time ms\tresult: $result")
+}
+
+// helpers for Q4
 const val Q4_MAX = 100_000_000
 fun randomSet(): Set<Int> {
     val set = mutableSetOf<Int>()
@@ -27,43 +55,4 @@ fun generateSequence(n: Int, exclude: Set<Int>): Sequence<Int> {
             }
         }
     }
-}
-
-fun testListNode(expect: ListNode, block: () -> ListNode) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
-}
-
-fun testInt(expect: Int, block: () -> Int) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
-}
-
-fun testList(expect: List<Int>, block: () -> List<Int>) {
-    val start = System.currentTimeMillis()
-    val output = block()
-    val end = System.currentTimeMillis()
-    val time = (end - start).toString()
-    val result = if (expect == output) {
-        "good"
-    } else {
-        "bad"
-    }
-    println("time: $time ms\tresult: $result")
 }
