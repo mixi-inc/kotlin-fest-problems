@@ -1,3 +1,26 @@
+// Submit your answer code using functions below.
+// You can use additional function as well.
+// Don't forget copy import statements, if you use some libraries.
+// submit to:
+// https://forms.gle/3pTnurkXmpvdr6kp6
+fun answer1(list1: ListNode, list2: ListNode): ListNode {
+    return ListNode(0)
+}
+
+fun answer2(y: Int, b: Int, r: Int): Int {
+    return 0
+}
+
+fun answer3(inputs: Int): Int {
+    return 0
+}
+
+fun answer4(input: Sequence<Int>): Int {
+    return 0
+}
+
+// ---- submit above ----
+
 // These are dummy test cases.
 // We will use more test cases to estimate your code.
 fun main() {
@@ -25,21 +48,4 @@ fun main() {
     testInt(0) {
         return@testInt answer4(testSequence)
     }
-}
-
-// submit code below after editing
-fun answer1(list1: ListNode, list2: ListNode): ListNode {
-    return ListNode(0)
-}
-
-fun answer2(y: Int, b: Int, r: Int): Int {
-    return 0
-}
-
-fun answer3(inputs: Int): Int {
-    return 0
-}
-
-fun answer4(input: Sequence<Int>): Int {
-    return 0
 }

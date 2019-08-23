@@ -27,7 +27,6 @@ fun testInt(expect: Int, block: () -> Int) {
     println("time: $time ms\tresult: $result")
 }
 
-// class for Q1
 /**
  * List for Q1
  * Example:
