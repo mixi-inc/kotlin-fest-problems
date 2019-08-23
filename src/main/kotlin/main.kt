@@ -28,16 +28,6 @@ fun main() {
 }
 
 // submit code below after editing
-/**
- * List for Q1
- * Example:
- * var li = ListNode(5)
- * var v = li.`val`
- */
-data class ListNode(var value: Int) {
-    var next: ListNode? = null
-}
-
 fun answer1(list1: ListNode, list2: ListNode): ListNode {
     return ListNode(0)
 }

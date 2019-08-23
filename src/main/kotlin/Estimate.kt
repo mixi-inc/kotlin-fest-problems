@@ -27,6 +27,31 @@ fun testInt(expect: Int, block: () -> Int) {
     println("time: $time ms\tresult: $result")
 }
 
+// class for Q1
+/**
+ * List for Q1
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.value
+ */
+data class ListNode(var value: Int) {
+    var next: ListNode? = null
+
+    override fun equals(other: Any?): Boolean {
+        return compare(this, other as ListNode)
+    }
+
+    private fun compare(list1: ListNode?, list2: ListNode?) :Boolean{
+        if (list1 == null && list2 == null) {
+            return true
+        }
+        if (list1?.value == list2?.value) {
+            return compare(list1?.next, list2?.next)
+        }
+        return false
+    }
+}
+
 // helpers for Q4
 const val Q4_MAX = 100_000_000
 fun randomSet(): Set<Int> {
