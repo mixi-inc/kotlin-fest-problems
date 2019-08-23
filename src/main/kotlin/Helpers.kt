@@ -27,6 +27,19 @@ fun testInt(expect: Int, block: () -> Int) {
     println("time: $time ms\tresult: $result")
 }
 
+fun testLong(expect: Long, block: () -> Long) {
+    val start = System.currentTimeMillis()
+    val output = block()
+    val end = System.currentTimeMillis()
+    val time = (end - start).toString()
+    val result = if (expect == output) {
+        "good"
+    } else {
+        "bad"
+    }
+    println("time: $time ms\tresult: $result")
+}
+
 /**
  * List for Q1
  * Example:

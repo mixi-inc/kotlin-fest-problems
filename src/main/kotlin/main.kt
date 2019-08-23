@@ -11,7 +11,7 @@ fun answer2(y: Int, b: Int, r: Int): Int {
     return 0
 }
 
-fun answer3(inputs: Int): Int {
+fun answer3(inputs: Int): Long {
     return 0
 }
 
@@ -39,8 +39,8 @@ fun main() {
     }
 
     println("Q3")
-    testInt(0) {
-        return@testInt answer3(10)
+    testLong(0) {
+        return@testLong answer3(10)
     }
 
     println("Q4")
