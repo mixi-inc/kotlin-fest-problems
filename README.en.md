@@ -4,7 +4,7 @@ Let's solve 4 problems below using main.kt
 
 - We will benchmark the processing time of your code.
 - If the number of correct answers is the same, faster code will be ranked higher.
-- Code will be eliminated if it takes more than 4 mins.
+- Code will be eliminated if it takes more than 2 mins.
 - The actual test cases will be published only at a later date.
 
 # Answer form
